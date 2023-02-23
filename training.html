@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="root">   <!-- div#root -->
+     <div>아침</div>
+     <div>점심</div>
+     <div>저녁</div>
+  </div>
+  <script>
+    let practiceArray =["피카츄","라이츄","꼬부기","파이리",];
+    let favorit = ["백현","박보검","송강","김동욱","송중기"]
+    
+    let root =document.getElementById("root");
+    document.write(favorit, '<br>'); //서류에 써라 .  favorit 의 배열들을. 
+    console.log(favorit); //array 5개  0 , 1, 2, 3, 4  백현~송중기
+    document.write(favorit[0], '<br>');  // favorit : array의 [0]번인 백현이가 나온다. 
+    document.write(root); //  object html div element 
+    console.dir(root); // 
+  </script>
+</body>
+</html>
