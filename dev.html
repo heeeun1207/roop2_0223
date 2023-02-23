@@ -29,7 +29,7 @@
 
 
     //선생님
-    let menu =document.getElementById('menu'); //값을 의미해서 따옴표를 붙인다. // 부모를 선택함
+    let menu =window.document.getElementById('menu'); //값을 의미해서 따옴표를 붙인다. // 부모를 선택함
     console.dir(menu); //children 0 1 2 3 4 찾을수있음 
     console.log(menu.children); // 딱 li 태그만 선택함 
     // let menu2 =document.getElementsByTagName("ul");
@@ -37,7 +37,23 @@
     // console.dir(menu2);
     // let menu3 =document.getElementsByTagName("li");
     // console.log(menu3);
-    console.log(menu.children[0]);
+    console.log(menu.children[0]);//특정 하나 지정해줘야 콘솔값이 나옴  // 리턴은 배열이다 . 
+    console.dir(menu.children[0]); //개발자도구에서 css 값들을 확인해보기 
+    console.dir(menu.children[0].style); // 스타일만보기 
+    // menu.children[0].style.color = "blue"; // 파랑색으로 바꿔보기 
+
+    for(let index =0; index< menu.children.length; index++){
+   // length , "길이값이 어라인진 모르지만 값(value)은 정해졌다."
+   // if(menu.children[index].textcontent === "item-3") {--> 조건식 참 true
+    if(index ===2 ){   //조건식 참 true 
+     // 참 true 일때 실행 구문 
+      menu.children[index].style.color = "red"; 
+    
+    } else { // else, "참이 아닐 때 " 실행구문 
+      menu.children[index].style.backgroundcolor = "gray";
+    } 
+  } //중괄호는 일련의 '영역'을 구분하는 역할을 한다.
+  // 영역을 스코프(scope)라고 부른다.
   </script>
 </body>
 </html>
