@@ -8,7 +8,7 @@
 </head>
 <body>
   <ul id="menu">
-    <li>items-1</li>
+    <li>items-1</li> <!--li{item-$}*5 -->
     <li>items-2</li>
     <li>items-3</li>
     <li>items-4</li>
@@ -19,14 +19,25 @@
     // console.log('menu');
 
     // for(let i = 0; i < student.length; i++) {
-    let i= textContent.length-1;
-    for(let i = 0; i <5; i++){
-    let li = document.getElementById("menu");
-      li.textContent =[i];
-      li.style.backgroundColor = "blue";
+    // let i= textContent.length-1;
+    // for(let i = 0; i <5; i++){
+    // let li = document.getElementById("menu");
+    //   li.textContent =[i];
+    //   li.style.backgroundColor = "blue";
       // root.appendChild(li);
-    }
+    // }
 
+
+    //선생님
+    let menu =document.getElementById('menu'); //값을 의미해서 따옴표를 붙인다. // 부모를 선택함
+    console.dir(menu); //children 0 1 2 3 4 찾을수있음 
+    console.log(menu.children); // 딱 li 태그만 선택함 
+    // let menu2 =document.getElementsByTagName("ul");
+    // console.log(menu2);
+    // console.dir(menu2);
+    // let menu3 =document.getElementsByTagName("li");
+    // console.log(menu3);
+    console.log(menu.children[0]);
   </script>
 </body>
 </html>
