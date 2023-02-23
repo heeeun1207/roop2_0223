@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="root"></div>
+  <script>
+    let setData = {
+      tagNames : ["header", "main", "footer"],
+      contentValues : ["머리", "메인", "발꼬락"],
+      colors : ["red", "green", "blue"]
+    }
+    let root = document.getElementById("root");
+    root.innerHTML = "<" + setData.tagNames[0] + ">" + setData.contentValues[0] + "</"  + setData.tagNames[0] + ">" ;
+    // 머리글자만 나온다 왜일까?  >  ~보다 크다 <  ~보다 작다 >=  ~보다 크거나 같다 <=  ~보다 작거나 같다 !=  같지 않음
+    console.log(setData); //object  color , contnet, tag  각 array 3
+    //머리 
+  </script>
+</body>
+</html>
